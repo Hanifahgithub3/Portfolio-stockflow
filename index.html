@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hanifah – Portofolio</title>
+  <meta name="description" content="Portofolio Hanifah: lulusan Teknik Informatika dengan pengalaman operasional dan administrasi F&B, pembuat StockFlow.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<script>
+  function slide(dir) {
+    const t = document.getElementById('track');
+    t.scrollBy({ left: dir * t.clientWidth, behavior: 'smooth' });
+  }
+</script>
+<body>
+
+<header class="top">
+  <a class="brand" href="#">Hanifah</a>
+  <nav>
+    <a href="#stockflow">StockFlow</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>4 Tahun di F&amp;B. Sekarang saya juga membangun sistemnya.</h1>
+    <p>Saya Hanifah, lulusan S1 Computer Science Universitas Budi Luhur dengan pengalaman ERP (Acumatica), rekonsiliasi, dan pelaporan operasional. Berbasis di Jakarta Selatan dan mencari peran di ERP support, operasional sistem, atau solusi bisnis berbasis teknologi.</p>
+      
+    <a class="btn" href="#stockflow">Lihat proyek StockFlow</a>
+      <a class="btn ghost" href="#kontak">Hubungi saya</a>
+    </div>
+  </section>
+
+  <section id="stockflow" class="case">
+    <h2>StockFlow</h2>
+    <p class="lead">Sistem manajemen inventaris dan purchase order berbasis web. Proyek pribadi untuk belajar dan berlatih, dibangun dari masalah yang saya kenal langsung di lapangan: stok yang tidak terpantau dan pembelian yang tercatat tercecer.</p>
+
+   <div class="slider" aria-label="Screenshot StockFlow">
+  <div class="track" id="track">
+    <figure>
+      <img src="images/dashboard.JPG" alt="Dashboard StockFlow">
+      <figcaption>Dashboard: ringkasan inventaris dan produk yang stoknya menipis.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/product.JPG" alt="Halaman daftar produk">
+      <figcaption>Produk: data produk, kategori, dan jumlah stok.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/Categories.JPG" alt="Halaman kategori">
+      <figcaption>Kategori: pengelompokan produk.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/Suppliers.JPG" alt="Halaman pemasok">
+      <figcaption>Pemasok: data dan kontak pemasok.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/PO.JPG" alt="Halaman purchase order">
+      <figcaption>Purchase Order: membuat dan memantau pesanan pembelian.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/Invoice.JPG" alt="Dokumen PO dalam format PDF">
+      <figcaption>Dokumen PO yang bisa diunduh sebagai PDF.</figcaption>
+    </figure>
+  </div>
+  <button class="nav prev" onclick="slide(-1)" aria-label="Sebelumnya">‹</button>
+  <button class="nav next" onclick="slide(1)" aria-label="Berikutnya">›</button>
+</div>
+
+    <div class="cols">
+      <div>
+        <h3>Yang bisa dilakukan</h3>
+        <ul>
+          <li>Kelola produk, kategori, dan pemasok</li>
+          <li>Buat purchase order dan unduh sebagai PDF</li>
+          <li>Catat penerimaan barang (parsial maupun penuh) lewat Goods Receipt</li>
+          <li>Stok dan status PO diperbarui otomatis setelah barang diterima</li>
+          <li>Akses fitur dibatasi berdasarkan peran pengguna</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Teknologi</h3>
+        <p>Laravel, PHP, MySQL, Bootstrap 5, JavaScript, Composer, DomPDF</p>
+        <h3>Catatan</h3>
+       <p>Aplikasi berjalan di komputer lokal dan belum di-hosting. Kodenya ada di GitHub, dan alurnya dapat diperlihatkan lewat demo jika Anda tertarik.</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="https://github.com/Hanifahgithub3/stockflow">Kode di GitHub</a>
+      <!-- Ganti # dengan link YouTube (unlisted) setelah video demo siap -->
+
+    </div>
+  </section>
+
+  <section id="pendidikan">
+  <h2>Pendidikan</h2>
+  <div class="row">
+    <h3>Universitas Budi Luhur<br><small>2021–2025</small></h3>
+    <p>S1 Computer Science, IPK 3,58.</p>
+  </div>
+</section>
+
+  <section id="skripsi">
+  <h2>Skripsi: Enkripsi AES-256 untuk Data Penjualan</h2>
+  <p class="lead">Sistem berbasis web (PHP, MySQL) untuk melindungi data penjualan harian yang tersimpan di komputer toko yang bisa diakses siapa saja. Dikerjakan bersama tim internal Tuku Joglo untuk merumuskan masalah dan kebutuhan sistemnya.</p>
+  <ul>
+    <li>File data dilindungi dengan enkripsi AES-256 dan hanya bisa dibuka setelah didekripsi dengan kode akses</li>
+    <li>Kode akses disimpan dalam bentuk hash di sisi sistem</li>
+    <li>Dipublikasikan di Prosiding SENAFTI: Hanifah &amp; Kusumaningsih (2025), 4(2), 95–103</li>
+  </ul>
+</section>
+
+  <section id="pengalaman">
+  <h2>Pengalaman</h2>
+  <div class="row">
+    <h3>Operational &amp; Administration Staff<br>Toko Kopi Tuku<br><small>Jul 2022 – Mei 2026</small></h3>
+    <p>Memproses purchase order, penerimaan barang, dan transaksi inventaris di ERP Acumatica. Rekonsiliasi transaksi tunai dan non-tunai harian, laporan petty cash, laporan operasional, serta koordinasi stok dan alur kerja di beberapa outlet cloud kitchen.</p>
+  </div>
+</section>
+
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Terbuka untuk lowongan dan diskusi.</p>
+    <ul class="links">
+      <!-- Ganti dengan email dan LinkedIn kamu -->
+   <li><a href="https://mail.google.com/mail/?view=cm&to=hanifahneness@gmail.com" target="_blank" rel="noopener">hanifahneness@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/Hanifahhan">LinkedIn</a></li>
+      <li><a href="https://github.com/Hanifahgithub3">GitHub</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>© 2026 Hanifah</footer>
+
+</body>
+</html>
